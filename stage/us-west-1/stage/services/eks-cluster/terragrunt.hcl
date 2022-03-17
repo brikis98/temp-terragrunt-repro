@@ -10,7 +10,7 @@ include "envcommon" {
 }
 
 terraform {
-  source = "git::git@github.com:gruntwork-io/terraform-aws-eks.git//modules/eks-cluster?ref=v0.49.1"
+  source = "git::git@github.com:gruntwork-io/terraform-aws-eks.git//modules/eks-cluster?ref=v0.50.0"
 }
 
 # ---------------------------------------------------------------------------------------------------------------------
