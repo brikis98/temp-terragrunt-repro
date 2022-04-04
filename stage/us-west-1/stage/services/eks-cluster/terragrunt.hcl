@@ -10,14 +10,14 @@ include "envcommon" {
 }
 
 terraform {
-  source = "git::git@github.com:gruntwork-io/terraform-aws-eks.git//modules/eks-cluster?ref=v0.49.1"
+  source = "git::git@github.com:gruntwork-io/terraform-aws-eks.git//modules/eks-cluster?ref=v0.50.0"
 }
 
 # ---------------------------------------------------------------------------------------------------------------------
 # Module parameters to pass in. Note that these parameters are environment specific.
 # ---------------------------------------------------------------------------------------------------------------------
 inputs = {
-  asg_enable_detailed_monitoring = true
+  asg_default_enable_detailed_monitoring = true
 
   # We override the AMI filters just for the dev environment to show an example of how you can test a new version of the
   # EKS Cluster AMI in a single environment. This setting replaces the `ami_filters` configuration defined in the base.
